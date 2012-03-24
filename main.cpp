@@ -11,7 +11,7 @@ void Draw() {
     glClear(GL_COLOR_BUFFER_BIT);
     //glColor3f(1.0, 1.0, 1.0);
     glPushMatrix();
-    Scale = 1.0 - abs(sin(3.14*Angel/90.0)/sqrt(3.0)/2);
+    Scale = 1.0 - fabs(sin(3.14*Angel/90.0)/sqrt(3.0)/2);
     glRotatef(Angel, 0.0, 0.0, 1.0);
     glScalef(Scale, Scale, 1.0);
     glBegin(GL_LINES);
